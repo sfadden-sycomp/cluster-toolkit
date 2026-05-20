@@ -48,3 +48,12 @@ output "subnetwork_address" {
   description = "Subnetwork IP range in the primary region"
   value       = data.google_compute_subnetwork.primary_subnetwork.ip_cidr_range
 }
+
+output "project_id" {
+  description = "Project in which the VPC exists"
+  value       = data.google_compute_network.project
+}
+
+
+
+
